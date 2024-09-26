@@ -25,20 +25,18 @@ document.addEventListener('click', event => {
 // Selecciona la imagen del chat-header
 const perfilImg = $('.chat-header img');
 
-// Agrega un evento de click a la imagen
-perfilImg.on('click', function () {
+// Agrega un evento de mouseover a la imagen
+perfilImg.on('mouseover', function () {
   // Muestra el contenedor con la imagen de perfil ampliada y el buscador de conversaciones
   const perfilContainer = $('.perfil-container');
   perfilContainer.show();
 });
 
-// Agrega un evento de click en el documento para cerrar el contenedor
-$(document).on('click', function (event) {
-  // Si el click no es dentro del contenedor con la clase perfil-container
-  if (!$(event.target).closest('.perfil-container').length && !$(event.target).closest('.chat-header img').length) {
-    // Cierra el contenedor
-    $('.perfil-container').hide();
-  }
+// Agrega un evento de mouseout a la imagen
+perfilImg.on('mouseout', function () {
+  // Cierra el contenedor
+  const perfilContainer = $('.perfil-container');
+  perfilContainer.hide();
 });
 
 

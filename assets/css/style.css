@@ -11,7 +11,7 @@ body{
 
 /* NAV */
 .navbar {
-  opacity: 0.7;  
+  opacity: 0.8;  
   width: 100%;
   display: flex;
   align-items: center;
@@ -29,12 +29,28 @@ body{
 .navbar-nav {
   margin-right: 20px;
 }
+
+.navbar-nav a {
+  color: #000;
+  text-decoration: none;
+}
+
+.navbar-nav a:hover {
+  color: #fff; 
+  background-color: #333; 
+  text-decoration: none;
+}
+
+.navbar-nav a.active {
+  color: #fff; 
+  background-color: #333; 
+  text-decoration: none;
+}
 /* //NAV */
 
 
 /* container */
 section{
-  /* border: 2px solid black; */
   padding: 10px;
 }
 
@@ -42,7 +58,6 @@ section{
   display: flex;
   justify-content: center;
   padding: 10px;
-  /* border: 2px solid black; */
   background-color: #468097; 
 }
 
@@ -63,10 +78,24 @@ section{
   margin-right: 10px;
 }
 
+.input-group-text {
+  cursor: pointer; 
+}
+
+.input-group-text:hover {
+  background-color: #f0f0f0; 
+  border-color: #ccc; 
+}
+
+.input-group-text:active {
+  background-color: #e0e0e0; 
+  border-color: #aaa; 
+}
+
 /* Funcion para la imagen  */
 
 .perfil-container {
-  display: none; /* Oculta el contenedor por defecto */
+  display: none; 
   position: absolute;
   top: 0;
   left: 0;
@@ -94,15 +123,15 @@ section{
 /* Funcion para la imagen  */
 
 .chat-header{
-  background-color: #000; /* Negro */
-  color: #fff; /* Blanco */
+  background-color: #000; 
+  color: #fff;
   position: sticky;
   display: flex;
   align-items: center;
   top: 0;
   padding: 10px;
   border-radius: 5px;
-  border: 1px solid #ddd; /* Agrega un borde inferior para separarlo del contenido */
+  border: 1px solid #ddd; 
   z-index: 1; 
 }
 
@@ -117,7 +146,7 @@ section{
 }
 
 .chat-messages .message {
-  background-color: #fff; /* Color de fondo para mensajes recibidos */
+  background-color: #fff; 
   padding: 10px;
   border-radius: 5px;
   margin-bottom: 10px;
@@ -126,12 +155,12 @@ section{
   margin-bottom: 25px;
   display: flex;
   align-items: center;
-  align-self: flex-start; /* Alinea los mensajes recibidos a la izquierda */
+  align-self: flex-start; 
   position: relative;
 }
 
 .message-sent {
-  background-color: #e9da56; /* Color de fondo para mensajes enviados */
+  background-color: #e9da56; 
   padding: 10px;
   border-radius: 5px;
   margin-bottom: 10px;
@@ -140,13 +169,13 @@ section{
   margin-bottom: 25px;
   display: flex;
   align-items: center;
-  align-self: flex-end; /* Alinea los mensajes enviados a la derecha */
+  align-self: flex-end; 
   position: relative;
 }
 
 .message-sent .timestamp-container {
   position: absolute;
-  bottom: -20px; /* Ajusta el valor para que se vea bien */
+  bottom: -20px; 
   right: 10px;
   font-size: 12px;
   color: #fff;
@@ -154,7 +183,7 @@ section{
 
 .message .timestamp-container {
   position: absolute;
-  bottom: -20px; /* Ajusta el valor para que se vea bien */
+  bottom: -20px; 
   right: 10px;
   font-size: 12px;
   color: #fff;
@@ -163,6 +192,7 @@ section{
 .message img {
   border-radius: 50%;
   margin-right: 10px;
+  padding: 2px;
   width: 40px;
   height: 40px;
 }
@@ -170,12 +200,13 @@ section{
 .message-sent img {
   border-radius: 50%;
   margin-left: 10px;
+  padding: 2px;
   width: 40px;
   height: 40px;
 }
 
 .message p, .message-sent p {
-  margin: 0 10px; /* Agrega margen al texto dentro de los mensajes */
+  margin: 0 10px; 
 }
 
 /* Chat recientes */
@@ -203,7 +234,7 @@ section{
   border: none;
   padding: 10px;
   cursor: pointer;
-  transition: background-color 0.2s ease-in-out; /* Agrega una transición */
+  transition: background-color 0.2s ease-in-out;
 }
 
 .accordion-button.unread {
@@ -229,11 +260,11 @@ section{
 /* Footer */
 .footer {
   opacity: 0.5;
-  position: fixed; /* Fija el footer en la parte inferior */
-  bottom: 0; /* Asegura que el footer se quede en la parte inferior */
+  position: fixed;
+  bottom: 0; 
   width: 100%;
-  background-color: #343a40; /* Color de fondo oscuro */
-  color: white; /* Texto en blanco */
+  background-color: #343a40; 
+  color: white;
   text-align: center;
   padding: 10px 0;
 }
@@ -310,33 +341,3 @@ section{
     bottom: auto;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.input-group-text {
-  cursor: pointer; /* Cambia el cursor a una mano para indicar que es clickable */
-}
-
-.input-group-text:hover {
-  background-color: #f0f0f0; /* Cambia el fondo a un color gris claro cuando se pasa el mouse sobre la lupa */
-  border-color: #ccc; /* Cambia el borde a un color gris claro cuando se pasa el mouse sobre la lupa */
-}
-
-.input-group-text:active {
-  background-color: #e0e0e0; /* Cambia el fondo a un color gris más oscuro cuando se hace clic en la lupa */
-  border-color: #aaa; /* Cambia el borde a un color gris más oscuro cuando se hace clic en la lupa */
-}
-
