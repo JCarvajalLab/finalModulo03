@@ -1,4 +1,5 @@
-body{
+@charset "UTF-8";
+body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
@@ -6,12 +7,12 @@ body{
   background-color: black;
   background-image: url("https://cdn.pixabay.com/photo/2016/06/02/02/35/mesh-1430107_1280.png");
   background-size: cover;
-  background-position: center;   
+  background-position: center;
 }
 
 /* NAV */
 .navbar {
-  opacity: 0.8;  
+  opacity: 0.8;
   width: 100%;
   display: flex;
   align-items: center;
@@ -36,32 +37,31 @@ body{
 }
 
 .navbar-nav a:hover {
-  color: #fff; 
-  background-color: #333; 
+  color: #fff;
+  background-color: #333;
   text-decoration: none;
 }
 
 .navbar-nav a.active {
-  color: #fff; 
-  background-color: #333; 
+  color: #fff;
+  background-color: #333;
   text-decoration: none;
 }
+
 /* //NAV */
-
-
 /* container */
-section{
+section {
   padding: 10px;
 }
 
-.container-fluid{
+.container-fluid {
   display: flex;
   justify-content: center;
   padding: 10px;
-  background-color: #468097; 
+  background-color: #468097;
 }
 
-.chat-list, .content{
+.chat-list, .content {
   border: 2px solid black; /*sacar despues*/
   background-color: #68c4e9;
   padding: 10px;
@@ -70,32 +70,31 @@ section{
   overflow: auto;
 }
 
-.content{
-  overflow-y: auto;  
+.content {
+  overflow-y: auto;
 }
 
-.chat-list{
+.chat-list {
   margin-right: 10px;
 }
 
 .input-group-text {
-  cursor: pointer; 
+  cursor: pointer;
 }
 
 .input-group-text:hover {
-  background-color: #f0f0f0; 
-  border-color: #ccc; 
+  background-color: #f0f0f0;
+  border-color: #ccc;
 }
 
 .input-group-text:active {
-  background-color: #e0e0e0; 
-  border-color: #aaa; 
+  background-color: #e0e0e0;
+  border-color: #aaa;
 }
 
 /* Funcion para la imagen  */
-
 .perfil-container {
-  display: none; 
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -121,9 +120,8 @@ section{
 }
 
 /* Funcion para la imagen  */
-
-.chat-header{
-  background-color: #000; 
+.chat-header {
+  background-color: #000;
   color: #fff;
   position: sticky;
   display: flex;
@@ -131,8 +129,8 @@ section{
   top: 0;
   padding: 10px;
   border-radius: 5px;
-  border: 1px solid #ddd; 
-  z-index: 1; 
+  border: 1px solid #ddd;
+  z-index: 1;
 }
 
 .chat-header img {
@@ -146,7 +144,7 @@ section{
 }
 
 .chat-messages .message {
-  background-color: #fff; 
+  background-color: #fff;
   padding: 10px;
   border-radius: 5px;
   margin-bottom: 10px;
@@ -155,12 +153,12 @@ section{
   margin-bottom: 25px;
   display: flex;
   align-items: center;
-  align-self: flex-start; 
+  align-self: flex-start;
   position: relative;
 }
 
 .message-sent {
-  background-color: #e9da56; 
+  background-color: #e9da56;
   padding: 10px;
   border-radius: 5px;
   margin-bottom: 10px;
@@ -169,13 +167,13 @@ section{
   margin-bottom: 25px;
   display: flex;
   align-items: center;
-  align-self: flex-end; 
+  align-self: flex-end;
   position: relative;
 }
 
 .message-sent .timestamp-container {
   position: absolute;
-  bottom: -20px; 
+  bottom: -20px;
   right: 10px;
   font-size: 12px;
   color: #fff;
@@ -183,7 +181,7 @@ section{
 
 .message .timestamp-container {
   position: absolute;
-  bottom: -20px; 
+  bottom: -20px;
   right: 10px;
   font-size: 12px;
   color: #fff;
@@ -206,22 +204,21 @@ section{
 }
 
 .message p, .message-sent p {
-  margin: 0 10px; 
+  margin: 0 10px;
 }
 
 /* Chat recientes */
-
-.title{
+.title {
   background-color: rgb(0, 0, 0);
   color: #fff;
   border: 2px solid black;
   border-radius: 5px;
-  border: 1px solid #ddd; 
-  padding:21px;
+  border: 1px solid #ddd;
+  padding: 21px;
   text-align: center;
 }
 
-.accordion-button{
+.accordion-button {
   padding: 10px;
 }
 
@@ -252,18 +249,14 @@ section{
 }
 
 /* //Chat recientes */
-
 /* //container */
-
-
-
 /* Footer */
 .footer {
   opacity: 0.5;
   position: fixed;
-  bottom: 0; 
+  bottom: 0;
   width: 100%;
-  background-color: #343a40; 
+  background-color: #343a40;
   color: white;
   text-align: center;
   padding: 10px 0;
@@ -280,64 +273,47 @@ section{
 }
 
 /* //FOOTER */
-
-
-
-
-
-
-
-
-
 @media only screen and (max-width: 390px) {
   /* Estilos para pantalla pequeña */
   .navbar {
     flex-direction: column;
     align-items: center;
   }
-  
   .navbar-brand {
     margin-left: 0;
   }
-  
   .navbar-nav {
     margin-right: 0;
   }
-  
   .container-fluid {
     flex-direction: column;
   }
-  
   .chat-list, .content {
     width: 100%;
     height: auto;
     overflow: auto;
   }
-  
   .chat-header {
     padding: 5px;
   }
-  
   .chat-messages {
     flex-direction: column;
   }
-  
   .message {
     max-width: 100%;
     margin-bottom: 10px;
   }
-  
   .message-sent {
     max-width: 100%;
     margin-bottom: 10px;
   }
-  
   .accordion-button {
     padding: 5px;
   }
-  
   .footer {
     position: relative;
     bottom: auto;
   }
 }
+
+/*# sourceMappingURL=style.css.map */

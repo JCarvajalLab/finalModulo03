@@ -24,7 +24,6 @@ document.addEventListener('click', event => {
 
 // Selecciona la imagen del chat-header
 const perfilImg = $('.chat-header img');
-
 // Agrega un evento de mouseover a la imagen
 perfilImg.on('mouseover', function () {
   // Muestra el contenedor con la imagen de perfil ampliada y el buscador de conversaciones
